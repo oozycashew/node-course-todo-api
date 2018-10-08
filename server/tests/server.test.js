@@ -214,8 +214,8 @@ describe('POST /users', () => {
           expect(user).toBeTruthy();
           expect(user.password).not.toBe(password);
           done();
-        }).catch((err) => {
-          return done(err);
+        }).catch((e) => {
+          return done(e);
         });
       });
   });
